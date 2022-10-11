@@ -1,4 +1,4 @@
-# BNIQRIS-Portal
+# AUTOPAY-Portal
 
 ## **Step-step installation**
 1. Copy URL repository di gitlab dengan cara masuk ke folder projek - klik tombol clone kemudian copy url yang ada di bagian clone with HTTP <br />
@@ -27,13 +27,17 @@
 ## **Data yang perlu dirubah Sebelum running script**
 
 1. Data di file .env
-    * **merchantToClose** >> Merchant yang ingin di close, bisa dipilih menggunakan cara :
-        1. Login sebagai inputer
-        2. Masuk ke halaman [Inputer List - Inputer Merchant List](https://bni-bmm.spesandbox.com/inputer/merchant)
-        3. Filter data berdasarkan merchant yang active
-        4. Pilih merchant yang ingin di close (pastikan merchant yang dipilih adalah merchant yang tidak terpakai lagi atau bisa juga pilih merchant yang mengandung kata automation)
-        5. Pastikan merchant sedang tidak dalam proses lewat menu [Inputer Tracking Pengajuan](https://bni-bmm.spesandbox.com/inputer-tracking-pengajuan/list)(tidak dalam status *Need Revision*, *On progress Approver 1*,*On progress Approver 2*,*Send to PTEN*)
-        6. Ganti variabel **merchantToClose** dengan merchant yang dipilih
+    * **MIDTesting** >> Memastikan data Merchant ID yang dipilih memiliki List Customer Data dan List Users yang terdaftar, bisa dipilih menggunakan cara :
+        1. Login sebagai Admin
+        2. Masuk ke halaman [Merchant Management](https://apdev.bni-ecollection.com/merchant/index)
+        3. Filter data Status berdasarkan merchant yang active
+        4. Pilih merchant ID yang ingin digunakan dengan
+           **Ketentuan** 
+           a. Pastikan merchant yang dipilih adalah merchant yang tidak terpakai lagi atau bisa juga pilih merchant yang mengandung kata automation)
+           b. Pastikan MID yang dipilih terdapat List Customer Data (VA Number)
+           c. Pastikan MID terdapat List Akun Users yang terdaftar
+        6. Pastikan merchant sedang tidak dalam proses lewat menu [Inputer Tracking Pengajuan](https://bni-bmm.spesandbox.com/inputer-tracking-pengajuan/list)(tidak dalam status *Need Revision*, *On progress Approver 1*,*On progress Approver 2*,*Send to PTEN*)
+        7. Ganti variabel **merchantToClose** dengan merchant yang dipilih
 
     * **updatePTENBulk** >> Merchant yang ingin data PTEN nya di update, bisa dipilih menggunakan cara " 
         1. Login sebagai inputer
