@@ -69,7 +69,7 @@
         5. Pilih User yang ingin diedit dengan **ketentuan**   
            - Pastikan Users yang dipilih sesuai dan terdaftar
            - Pastikan data user yang dipilih dapat diedit
-        6. Ganti variabel **userDataEdit** dengan VA yang dipilih
+        6. Ganti variabel **userDataEdit** dengan users yang dipilih
  
      * **userDataDelete** >> Users yang ingin data akses nya didelete, bisa dipilih menggunakan cara : 
         1. Login sebagai Admin
@@ -79,7 +79,7 @@
         5. Pilih User yang ingin didelete dengan **ketentuan**   
            - Pastikan Users yang dipilih sesuai dan terdaftar
            - Pastikan data user yang dipilih dapat didelete
-        6. Ganti variabel **userDataDelete** dengan VA yang dipilih
+        6. Ganti variabel **userDataDelete** dengan users yang dipilih
 
      * **merchantIDForApprove** >> Merchant ID yang ingin data BNI Giro Account nya diubah dan diaktifkan, bisa dipilih menggunakan cara : 
         1. Login sebagai Admin
@@ -88,7 +88,7 @@
         5. Pilih Merchant ID yang ingin diubah account numbernya dengan **ketentuan**   
            - Pastikan Merchant ID tidak sedang menunggu APPROVAL, dapat dicek melalui halaman [Approval Management](https://apdev.bni-ecollection.com/bni/approval/index)
            - Pastikan AccountNumber MID berstatus ACTIVE dan dapat diubah
-        6. Ganti variabel **merchantIDForApprove** dengan VA yang dipilih
+        6. Ganti variabel **merchantIDForApprove** dengan merchant yang dipilih
 
 ## **Cara running Script**        
 Untuk menjalankan script automation, bisa menggunakan perintah :
