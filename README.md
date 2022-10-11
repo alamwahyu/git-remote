@@ -86,7 +86,7 @@
         2. Masuk ke halaman [Merchant Management](https://apdev.bni-ecollection.com/merchant/index)
         3. Filter by BNI Giro Status berdasarkan status ACTIVE
         5. Pilih Merchant ID yang ingin diubah account numbernya dengan **ketentuan**   
-           - Pastikan Merchant ID tidak sedang menunggu APPROVAL
+           - Pastikan Merchant ID tidak sedang menunggu APPROVAL, dapat dicek melalui halaman [Approval Management](https://apdev.bni-ecollection.com/bni/approval/index)
            - Pastikan AccountNumber MID berstatus ACTIVE dan dapat diubah
         6. Ganti variabel **merchantIDForApprove** dengan VA yang dipilih
 
