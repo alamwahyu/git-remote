@@ -40,28 +40,18 @@
     * **MIDNonRetail** >> Merchant Non Retail yang ingin data merchant nya di update, bisa dipilih menggunakan cara :
         1. Login sebagai Admin
         2. Masuk ke halaman [Merchant Management](https://apdev.bni-ecollection.com/merchant/index)
-        3. Klik tombol titik 3 dibawah text selamat datang
-        4. Kemudian klik klik Bulk Upload Update PTEN
-        5. Pilih merchant yang ingin diedit datanya kemudian ganti data *updatePTENBulk* degan data merchant yang dipilih (Pastikan Merchant yang dipilih tidak sedang proses edit data atau bisa juga pilih merchant yang mengandung kata automation)
-        6. Pastikan merchant sedang tidak dalam proses lewat menu [Inputer Tracking Pengajuan](https://bni-bmm.spesandbox.com/inputer-tracking-pengajuan/list)(tidak dalam status *Need Revision*, *On progress Approver 1*,*On progress Approver 2*,*Send to PTEN*)
-        7. Kemudian klik download template
-        8. Edit file xlsx dengan data yang ingin diupdate
-        9. Masukan file tersebut ke dalam folder templateBulk dan rename file nya menjadi *EditBulkMerchant_PTEN.xlsx*
-        10. Ganti variabel **MIDNonRetail** dengan merchant yang dipilih
-
-    * **updateNonPTENBulk** >> Merchant yang ingin data PTEN nya di update, bisa dipilih menggunakan cara " 
-        1. Login sebagai inputer
-        2. Masuk ke halaman [Inputer List - Inputer Merchant List](https://bni-bmm.spesandbox.com/inputer/merchant)
-        3. Klik tombol titik 3 dibawah text selamat datang
-        4. Kemudian klik klik Bulk Upload Update Non PTEN
-        5. Pilih merchant yang ingin diedit datanya kemudian ganti data *updateNonPTENBulk* degan data merchant yang dipilih (Pastikan Merchant yang dipilih tidak sedang proses edit data)
-        6. Pastikan merchant sedang tidak dalam proses lewat menu [Inputer Tracking Pengajuan](https://bni-bmm.spesandbox.com/inputer-tracking-pengajuan/list) (tidak dalam status *Need Revision*, *On progress Approver 1*,*On progress Approver 2*,*Send to PTEN*)
-        7. Kemudian klik download template
-        8. Edit file xlsx dengan data yang ingin diupdate
-        9. Masukan file tersebut ke dalam folder templateBulk dan rename file nya menjadi *EditBulkMerchant_NonPTEN.xlsx*
-        10. Ganti variabel **updateNonPTENBulk** dengan merchant yang dipilih
+        3. Pilih merchant ID yang ingin diedit dengan **ketentuan**   
+           - Pastikan merchant yang dipilih adalah merchant yang tidak terpakai lagi atau bisa juga pilih merchant yang mengandung kata automation)
+           - Pastikan Merchant ID bertipe **NON RETAIL**
+        4. Ganti variabel **MIDNonRetail** dengan merchant yang dipilih
+    * **MIDBilling** >> Merchant Billing yang ingin data merchant nya di update, bisa dipilih menggunakan cara :
+        1. Login sebagai Admin
+        2. Masuk ke halaman [Merchant Management](https://apdev.bni-ecollection.com/merchant/index)
+        3. Pilih merchant ID yang ingin diedit dengan **ketentuan**   
+           - Pastikan merchant yang dipilih adalah merchant yang tidak terpakai lagi atau bisa juga pilih merchant yang mengandung kata automation)
+           - Pastikan Merchant ID bertipe **BILLING**
+        4. Ganti variabel **MIDBilling** dengan merchant yang dipilih
         
-    
     * **updateListNonPTEN** >> Merchant yang ingin data Non PTEN nya di update, bisa dipilih menggunakan cara : 
         1. Login sebagai inputer
         2. Masuk ke halaman [Inputer List - Inputer Merchant List](https://bni-bmm.spesandbox.com/inputer/merchant)
