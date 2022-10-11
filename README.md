@@ -52,14 +52,14 @@
            - Pastikan Merchant ID bertipe **BILLING**
         4. Ganti variabel **MIDBilling** dengan merchant yang dipilih
         
-    * **VAcustomerDataEdit ** >> Customer Data yang ingin data VA nya diupdate, bisa dipilih menggunakan cara : 
+    * **VAcustomerDataEdit** >> Customer Data yang ingin data VA nya diupdate, bisa dipilih menggunakan cara : 
         1. Login sebagai Admin
         2. Masuk ke halaman [Merchant Management](https://apdev.bni-ecollection.com/merchant/index)
         3. Filter by Merchant ID berdasarkan merchant yang telah dipilih yaitu variabel **MIDTesting**
-        4. Klik & Masuk ke halaman Customer Data 
+        4. Klik & Masuk ke halaman [Customer Data](https://apdev.bni-ecollection.com/merchant/biller?id=2) 
         5. Pilih VA yang ingin diedit dengan **ketentuan**   
            - Pastikan VA yang dipilih sesuai dan terdaftar pada CustomerData
-        6. Ganti variabel **VAcustomerDataEdit ** dengan VA yang dipilih
+        6. Ganti variabel **VAcustomerDataEdit** dengan VA yang dipilih
 
     * **updateListPTEN** >> Merchant yang ingin data Non PTEN nya di update, bisa dipilih menggunakan cara : 
         1. Login sebagai inputer
