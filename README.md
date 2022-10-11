@@ -81,112 +81,14 @@
            - Pastikan data user yang dipilih dapat didelete
         6. Ganti variabel **userDataDelete** dengan VA yang dipilih
 
-    * **editAggregator** >> Aggregator yang ingin diedit namanya, bisa dipilih menggunakan cara :
-        1. Login sebagai inputer
-        2. Masuk ke halaman [Inputer List - Inputer Aggregator List](https://bni-bmm.spesandbox.com/inputer/aggregator)
-        3. Filter data berdasarkan Aggregator dengan status Active
-        4. Ganti variabel **editAggregator** dengan merchant yang dipilih 
-    
-    * **noPengajuanDataToRevision** >> Data Add Merchant yang perlu direvisi datanya, bisa dipilih menggunakan cara :
-        1. Login sebagai inputer
-        2. Masuk ke halaman [Request List - Daftar Tugas Inputer](https://bni-bmm.spesandbox.com/daftar-tugas/inputer-list)
-        3. Filter data berdasarkan **jenis pengajuan** *Add New Merchant*
-        4. Pilih salah satu merchant, kemudian copy Nomor pengajuannya dan ganti isi variabel **noPengajuanDataToRevision**
-
-    * **subMerchantAggregatorList** >> Aggregator utama yang di gunakan untuk testing modul subMerchant di AggregatorList, Bisa dipilih menggunakan cara: 
-        1. Login sebagai inputer
-        2. Masuk ke halaman [Inputer List - Inputer Aggregator List](https://bni-bmm.spesandbox.com/inputer/aggregator)
-        3. Filter data berdasarkan Aggregator dengan status Active
-        4. Pastikan **Aggregator** yang dipilih memiliki data submerchant
-        5. Ganti variabel **subMerchantAggregatorList** dengan merchant yang dipilih 
-
-    * **subMerchantAggregatorListEdit** >> Sub merchant yang ingin diedit datanya, bisa dipilih menggunakan cara : 
-        1. Login sebagai inputer
-        2. Masuk ke halaman [Inputer List - Inputer Aggregator List](https://bni-bmm.spesandbox.com/inputer/aggregator)
-        3. Filter data berdasarkan Aggregator yang diisi di variable **subMerchantAggregatorList**
-        4. Klik tombol titik 3 di bagian paling kanan tabel dan pilih View List Sub Merchant
-        5. Filter data berdasarkan status active
-        6. Pilih sub merchant dan gantikan variabel **subMerchantAggregatorListEdit** dengan yang dipilih
-        7. Pastikan sub merchant sedang tidak dalam proses waiting lewat menu [Inputer Tracking Pengajuan](https://bni-bmm.spesandbox.com/inputer-tracking-pengajuan/list) (tidak dalam status *Need Revision*, *On progress Approver 1*,*On progress Approver 2*,*Send to PTEN*)
-
-    * **subMerchantAggregatorListEditnonPTEN** >> Sub merchant yang ingin diedit datanya, bisa dipilih menggunakan cara : 
-        1. Login sebagai inputer
-        2. Masuk ke halaman [Inputer List - Inputer Aggregator List](https://bni-bmm.spesandbox.com/inputer/aggregator)
-        3. Filter data berdasarkan Aggregator yang diisi di variable **subMerchantAggregatorList**
-        4. Klik tombol titik 3 di bagian paling kanan tabel dan pilih View List Sub Merchant
-        5. Filter data berdasarkan status active
-        6. Pilih sub merchant dan gantikan variabel **subMerchantAggregatorListEditnonPTEN** dengan yang dipilih
-        7. Pastikan sub merchant sedang tidak dalam proses waiting lewat menu [Inputer Tracking Pengajuan](https://bni-bmm.spesandbox.com/inputer-tracking-pengajuan/list) (tidak dalam status *Need Revision*, *On progress Approver 1*,*On progress Approver 2*,*Send to PTEN*)
-
-    * **subMerchantAggregatorListClose** >> Sub merchant yang ingin diedit datanya, bisa dipilih menggunakan cara : 
-        1. Login sebagai inputer
-        2. Masuk ke halaman [Inputer List - Inputer Aggregator List](https://bni-bmm.spesandbox.com/inputer/aggregator)
-        3. Filter data berdasarkan Aggregator yang diisi di variable **subMerchantAggregatorList**
-        4. Klik tombol titik 3 di bagian paling kanan tabel dan pilih View List Sub Merchant
-        5. Filter data berdasarkan status active
-        6. Pilih sub merchant dan gantikan variabel **subMerchantAggregatorListClose** dengan yang dipilih
-        7. Pastikan sub merchant sedang tidak dalam proses waiting lewat menu [Inputer Tracking Pengajuan](https://bni-bmm.spesandbox.com/inputer-tracking-pengajuan/list) (tidak dalam status *Need Revision*, *On progress Approver 1*,*On progress Approver 2*,*Send to PTEN*)
-
-    * **subMerchantAggregatorListBulkUploadPTEN** >> Sub merchant yang ingin diedit datanya, bisa dipilih menggunakan cara : 
-        1. Login sebagai inputer
-        2. Masuk ke halaman [Inputer List - Inputer Aggregator List](https://bni-bmm.spesandbox.com/inputer/aggregator)
-        3. Filter data berdasarkan Aggregator yang diisi di variable **subMerchantAggregatorList**
-        4. Klik tombol titik 3 di bagian paling kanan tabel dan pilih View List Sub Merchant
-        5. Klik tombol Bulk Upload Update PTEN
-        7. Pilih merchant yang ingin diupdate datanya
-        8. Pilih sub merchant dan gantikan variabel **subMerchantAggregatorListBulkUploadPTEN** dengan yang dipilih (Pastikan sub merchant sedang tidak dalam proses Edit)
-        9. Pastikan sub merchant sedang tidak dalam proses waiting lewat menu [Inputer Tracking Pengajuan](https://bni-bmm.spesandbox.com/inputer-tracking-pengajuan/list) (tidak dalam status *Need Revision*, *On progress Approver 1*,*On progress Approver 2*,*Send to PTEN*)
-        10. Kemudian klik download template
-        11. Edit file xlsx dengan data yang ingin diupdate
-        12. Masukan file tersebut ke dalam folder templateBulk dan rename file nya menjadi *EditBulkSubMerchant_PTEN.xlsx*
-
-    * **subMerchantAggregatorListBulkUploadNonPTEN** >> Sub merchant yang ingin diedit datanya, bisa dipilih menggunakan cara : 
-        1. Login sebagai inputer
-        2. Masuk ke halaman [Inputer List - Inputer Aggregator List](https://bni-bmm.spesandbox.com/inputer/aggregator)
-        3. Filter data berdasarkan Aggregator yang diisi di variable **subMerchantAggregatorList**
-        4. Klik tombol titik 3 di bagian paling kanan tabel dan pilih View List Sub Merchant
-        5. Klik tombol Bulk Upload Update Non PTEN
-        7. Pilih merchant yang ingin diupdate datanya
-        8. Pilih sub merchant dan gantikan variabel **subMerchantAggregatorListBulkUploadNonPTEN** dengan yang dipilih (Pastikan sub merchant sedang tidak dalam proses Edit)
-        9. Pastikan sub merchant sedang tidak dalam proses waiting lewat menu [Inputer Tracking Pengajuan](https://bni-bmm.spesandbox.com/inputer-tracking-pengajuan/list) (tidak dalam status *Need Revision*, *On progress Approver 1*,*On progress Approver 2*,*Send to PTEN*)
-        10. Kemudian klik download template
-        11. Edit file xlsx dengan data yang ingin diupdate
-        12. Masukan file tersebut ke dalam folder templateBulk dan rename file nya menjadi *EditBulkSubMerchant_NonPTEN.xlsx*
-    * **listOutlet** >> Sub merchant yang digunakan untuk testing fitur di menu list outlet, bisa dipilih menggunakan cara :
-        1. Login sebagai inputer
-        2. Masuk ke halaman [Inputer List - Inputer Sub Merchant](https://bni-bmm.spesandbox.com/inputer/sub-merchant)
-        3. Filter data menggunakan status active
-        4. Pastikan sub merchant sedang tidak dalam proses waiting lewat menu [Inputer Tracking Pengajuan](https://bni-bmm.spesandbox.com/inputer-tracking-pengajuan/list) (tidak dalam status *Need Revision*, *On progress Approver 1*,*On progress Approver 2*,*Send to PTEN*)
-        5. Ganti variable **listOutlet** dengan sub merchant yang dipilih.
-    * **AggregatorForTestSubmerchant** >> Nama aggregator yang digunakan untuk testing menu sub merchant di aggregator list, bisa dipilih menggunakan cara:
-        1. login sebagai admin
-        2. Masuk ke halaman [Client List - Aggregator List](https://bni-bmm.spesandbox.com/client/aggregator)
-        3. filter data berdasarkan *Nama aggregator* dengan nama *auto* (bisa juga menggunakan nama lain, tapi untuk amannya menggukan merchant auto) dan filter data berdasarkan *Status* *Active*
-        4. Pastikan sub merchant sedang tidak dalam proses waiting lewat menu [Inputer Tracking Pengajuan](https://bni-bmm.spesandbox.com/inputer-tracking-pengajuan/list) (tidak dalam status *Need Revision*, *On progress Approver 1*,*On progress Approver 2*,*Send to PTEN*)
-        5. Ganti variable **AggregatorForTestSubmerchant** dengan Aggregator yang dipilih.
-    * **midMerchantToChangeSettlement** >> MID merchant yang akan digunakan untuk dirubah settlementnya, bisa dipilih menggunakan cara :
-        1. Login sebagai inputer
-        2. Filter data berdasarkan settlement type H+1
-        3. Pilih salah satu merchant yang inigun dirubah settlementnya
-        4. Pastikan merchant sedang tidak dalam proses lewat menu [Inputer Tracking Pengajuan](https://bni-bmm.spesandbox.com/inputer-tracking-pengajuan/list)(tidak dalam status  *Need Revision*, *On progress Approver 1*,*On progress Approver 2*,*Send to PTEN* )
-        5. Ganti variable **midMerchantToChangeSettlement** dengan mid merchant yang dipilih
-    * **midMerchantToChangeSettlementAll** >> MID merchant yang akan digunakan untuk dirubah settlementnya, bisa dipilih menggunakan cara :
-        1. Login sebagai inputer
-        2. Filter data berdasarkan settlement type H+1
-        3. Pilih salah satu merchant yang inigun dirubah settlementnya
-        4. Pastikan merchant sedang tidak dalam proses lewat menu [Inputer Tracking Pengajuan](https://bni-bmm.spesandbox.com/inputer-tracking-pengajuan/list)(tidak dalam status  *Need Revision*, *On progress Approver 1*,*On progress Approver 2*,*Send to PTEN* )
-        5. Ganti variable **midMerchantToChangeSettlementAll** dengan mid merchant yang dipilih
-
-
-2. File Bulk Create
-    * Bulk Upload Merchant
-        1. File ada di folder = templateBulk/Bulk_upload_Merchant.xlsx 
-        ![Lokasi file bulk upload Merchant](https://drive.google.com/uc?export=view&id=1JWHDizdU33X2-FsDpDox30rzZi-LQjWq)
-        2. Pastikan data di kolom MID, No Rek BNI, Nama Merchant, Nama Pemilik Usaha, No KTP, No NPWP, Email Pemilik usaha, dan No HP belum terdaftar.
-    
-    * Bulk Upload Sub Merchant
-        1. File ada di folder templateBulk/Bulk_Upload_SubMerchant.xlsx
-        2. Pastikan data di kolom MID, No Rek BNI, Nama Merchant, Nama Pemilik Usaha, No KTP, No NPWP, Email Pemilik usaha, dan No HP belum terdaftar.
+     * **merchantIDForApprove** >> Merchant ID yang ingin data BNI Giro Account nya diubah dan diaktifkan, bisa dipilih menggunakan cara : 
+        1. Login sebagai Admin
+        2. Masuk ke halaman [Merchant Management](https://apdev.bni-ecollection.com/merchant/index)
+        3. Filter by BNI Giro Status berdasarkan status ACTIVE
+        5. Pilih Merchant ID yang ingin diubah account numbernya dengan **ketentuan**   
+           - Pastikan Merchant ID tidak sedang menunggu APPROVAL
+           - Pastikan AccountNumber MID berstatus ACTIVE dan dapat diubah
+        6. Ganti variabel **merchantIDForApprove** dengan VA yang dipilih
 
 ## **Cara running Script**        
 Untuk menjalankan script automation, bisa menggunakan perintah :
