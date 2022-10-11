@@ -61,13 +61,25 @@
            - Pastikan VA yang dipilih sesuai dan terdaftar pada CustomerData
         6. Ganti variabel **VAcustomerDataEdit** dengan VA yang dipilih
 
-    * **updateListPTEN** >> Merchant yang ingin data Non PTEN nya di update, bisa dipilih menggunakan cara : 
-        1. Login sebagai inputer
-        2. Masuk ke halaman [Inputer List - Inputer Merchant List](https://bni-bmm.spesandbox.com/inputer/merchant)
-        3. Filter data berdasarkan merchant yang active
-        4. Pilih merchant yang ingin di edit data PTEN 
-        5. Pastikan merchant sedang tidak dalam proses lewat menu [Inputer Tracking Pengajuan](https://bni-bmm.spesandbox.com/inputer-tracking-pengajuan/list)(tidak dalam status  *Need Revision*, *On progress Approver 1*,*On progress Approver 2*,*Send to PTEN* )
-        6. Ganti variabel **updateListPTEN** dengan merchant yang dipilih    
+    * **userDataEdit** >> Users yang ingin data akses nya diupdate, bisa dipilih menggunakan cara : 
+        1. Login sebagai Admin
+        2. Masuk ke halaman [Merchant Management](https://apdev.bni-ecollection.com/merchant/index)
+        3. Filter by Merchant ID berdasarkan merchant yang telah dipilih yaitu variabel **MIDTesting**
+        4. Klik & Masuk ke halaman [Users Data](https://apdev.bni-ecollection.com/merchant/user?id=2) 
+        5. Pilih User yang ingin diedit dengan **ketentuan**   
+           - Pastikan Users yang dipilih sesuai dan terdaftar
+           - Pastikan data user yang dipilih dapat diedit
+        6. Ganti variabel **userDataEdit** dengan VA yang dipilih
+ 
+     * **userDataDelete** >> Users yang ingin data akses nya didelete, bisa dipilih menggunakan cara : 
+        1. Login sebagai Admin
+        2. Masuk ke halaman [Merchant Management](https://apdev.bni-ecollection.com/merchant/index)
+        3. Filter by Merchant ID berdasarkan merchant yang telah dipilih yaitu variabel **MIDTesting**
+        4. Klik & Masuk ke halaman [Users Data](https://apdev.bni-ecollection.com/merchant/user?id=2) 
+        5. Pilih User yang ingin didelete dengan **ketentuan**   
+           - Pastikan Users yang dipilih sesuai dan terdaftar
+           - Pastikan data user yang dipilih dapat didelete
+        6. Ganti variabel **userDataDelete** dengan VA yang dipilih
 
     * **editAggregator** >> Aggregator yang ingin diedit namanya, bisa dipilih menggunakan cara :
         1. Login sebagai inputer
