@@ -33,11 +33,10 @@
         3. Filter data Status berdasarkan merchant yang active
         4. Pilih merchant ID yang ingin digunakan dengan
            **Ketentuan** 
-           a. Pastikan merchant yang dipilih adalah merchant yang tidak terpakai lagi atau bisa juga pilih merchant yang mengandung kata automation)
-           b. Pastikan MID yang dipilih terdapat List Customer Data (VA Number)
-           c. Pastikan MID terdapat List Akun Users yang terdaftar
-        6. Pastikan merchant sedang tidak dalam proses lewat menu [Inputer Tracking Pengajuan](https://bni-bmm.spesandbox.com/inputer-tracking-pengajuan/list)(tidak dalam status *Need Revision*, *On progress Approver 1*,*On progress Approver 2*,*Send to PTEN*)
-        7. Ganti variabel **merchantToClose** dengan merchant yang dipilih
+           - Pastikan merchant yang dipilih adalah merchant yang tidak terpakai lagi atau bisa juga pilih merchant yang mengandung kata automation)
+           - Pastikan MID yang dipilih terdapat List Customer Data (VA Number)
+           - Pastikan MID terdapat List Akun Users yang terdaftar
+        7. Ganti variabel **MIDTesting** dengan merchant yang dipilih
 
     * **updatePTENBulk** >> Merchant yang ingin data PTEN nya di update, bisa dipilih menggunakan cara " 
         1. Login sebagai inputer
