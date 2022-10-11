@@ -31,16 +31,15 @@
         1. Login sebagai Admin
         2. Masuk ke halaman [Merchant Management](https://apdev.bni-ecollection.com/merchant/index)
         3. Filter data Status berdasarkan merchant yang active
-        4. Pilih merchant ID yang ingin digunakan dengan
-           **Ketentuan** 
+        4. Pilih merchant ID yang ingin digunakan dengan **ketentuan**   
            - Pastikan merchant yang dipilih adalah merchant yang tidak terpakai lagi atau bisa juga pilih merchant yang mengandung kata automation)
            - Pastikan MID yang dipilih terdapat List Customer Data (VA Number)
            - Pastikan MID terdapat List Akun Users yang terdaftar
         7. Ganti variabel **MIDTesting** dengan merchant yang dipilih
 
-    * **updatePTENBulk** >> Merchant yang ingin data PTEN nya di update, bisa dipilih menggunakan cara " 
-        1. Login sebagai inputer
-        2. Masuk ke halaman [Inputer List - Inputer Merchant List](https://bni-bmm.spesandbox.com/inputer/merchant)
+    * **MIDNonRetail** >> Merchant Non Retail yang ingin data merchant nya di update, bisa dipilih menggunakan cara :
+        1. Login sebagai Admin
+        2. Masuk ke halaman [Merchant Management](https://apdev.bni-ecollection.com/merchant/index)
         3. Klik tombol titik 3 dibawah text selamat datang
         4. Kemudian klik klik Bulk Upload Update PTEN
         5. Pilih merchant yang ingin diedit datanya kemudian ganti data *updatePTENBulk* degan data merchant yang dipilih (Pastikan Merchant yang dipilih tidak sedang proses edit data atau bisa juga pilih merchant yang mengandung kata automation)
@@ -48,7 +47,7 @@
         7. Kemudian klik download template
         8. Edit file xlsx dengan data yang ingin diupdate
         9. Masukan file tersebut ke dalam folder templateBulk dan rename file nya menjadi *EditBulkMerchant_PTEN.xlsx*
-        10. Ganti variabel **updatePTENBulk** dengan merchant yang dipilih
+        10. Ganti variabel **MIDNonRetail** dengan merchant yang dipilih
 
     * **updateNonPTENBulk** >> Merchant yang ingin data PTEN nya di update, bisa dipilih menggunakan cara " 
         1. Login sebagai inputer
