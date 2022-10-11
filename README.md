@@ -52,13 +52,14 @@
            - Pastikan Merchant ID bertipe **BILLING**
         4. Ganti variabel **MIDBilling** dengan merchant yang dipilih
         
-    * **updateListNonPTEN** >> Merchant yang ingin data Non PTEN nya di update, bisa dipilih menggunakan cara : 
-        1. Login sebagai inputer
-        2. Masuk ke halaman [Inputer List - Inputer Merchant List](https://bni-bmm.spesandbox.com/inputer/merchant)
-        3. Filter data berdasarkan merchant yang active
-        4. Pilih merchant yang ingin di edit data Non PTEN
-        5. Pastikan merchant sedang tidak dalam proses lewat menu [Inputer Tracking Pengajuan](https://bni-bmm.spesandbox.com/inputer-tracking-pengajuan/list)(tidak dalam status *Need Revision*, *On progress Approver 1*,*On progress Approver 2*,*Send to PTEN*)
-        6. Ganti variabel **updateListNonPTEN** dengan merchant yang dipilih
+    * **VAcustomerDataEdit ** >> Customer Data yang ingin data VA nya diupdate, bisa dipilih menggunakan cara : 
+        1. Login sebagai Admin
+        2. Masuk ke halaman [Merchant Management](https://apdev.bni-ecollection.com/merchant/index)
+        3. Filter by Merchant ID berdasarkan merchant yang telah dipilih yaitu variabel **MIDTesting**
+        4. Klik & Masuk ke halaman Customer Data 
+        5. Pilih VA yang ingin diedit dengan **ketentuan**   
+           - Pastikan VA yang dipilih sesuai dan terdaftar pada CustomerData
+        6. Ganti variabel **VAcustomerDataEdit ** dengan VA yang dipilih
 
     * **updateListPTEN** >> Merchant yang ingin data Non PTEN nya di update, bisa dipilih menggunakan cara : 
         1. Login sebagai inputer
