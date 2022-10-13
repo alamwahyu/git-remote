@@ -81,7 +81,7 @@
            - Pastikan data user yang dipilih dapat didelete
         6. Ganti variabel **userDataDelete** dengan users yang dipilih
 
-     * **merchantIDForApprove** >> Merchant ID yang ingin data BNI Giro Account nya diubah dan diaktifkan, bisa dipilih menggunakan cara : 
+     * **merchantIDForApprove** >> Merchant ID yang ingin data BNI Giro Account nya diubah dan diapprove, bisa dipilih menggunakan cara : 
         1. Login sebagai Admin
         2. Masuk ke halaman [Merchant Management](https://apdev.bni-ecollection.com/merchant/index)
         3. Filter by BNI Giro Status berdasarkan status ACTIVE
@@ -89,6 +89,24 @@
            - Pastikan Merchant ID tidak sedang menunggu APPROVAL, dapat dicek melalui halaman [Approval Management](https://apdev.bni-ecollection.com/bni/approval/index)
            - Pastikan AccountNumber MID berstatus ACTIVE dan dapat diubah
         6. Ganti variabel **merchantIDForApprove** dengan merchant yang dipilih
+        
+     * **merchantIDForReject** >> Merchant ID yang ingin data BNI Giro Account nya diubah dan direject, bisa dipilih menggunakan cara : 
+        1. Login sebagai Admin
+        2. Masuk ke halaman [Merchant Management](https://apdev.bni-ecollection.com/merchant/index)
+        3. Filter by BNI Giro Status berdasarkan status ACTIVE
+        5. Pilih Merchant ID yang ingin diubah account numbernya dengan **ketentuan**   
+           - Pastikan Merchant ID tidak sedang menunggu APPROVAL, dapat dicek melalui halaman [Approval Management](https://apdev.bni-ecollection.com/bni/approval/index)
+           - Pastikan AccountNumber MID berstatus ACTIVE dan dapat diubah
+        6. Ganti variabel **merchantIDForReject** dengan merchant yang dipilih
+        
+     * **accNumBillerBilling** >> Account Number Biller Billing yang dibutuhkan untuk proses inactive account, bisa dipilih menggunakan cara : 
+        1. Login sebagai Admin
+        2. Masuk ke halaman [Merchant Management](https://apdev.bni-ecollection.com/merchant/index)
+        3. Filter by BNI Giro Status berdasarkan status ACTIVE
+        5. Pilih Merchant ID yang ingin diubah account numbernya dengan **ketentuan**   
+           - Pastikan Merchant ID tidak sedang menunggu APPROVAL, dapat dicek melalui halaman [Approval Management](https://apdev.bni-ecollection.com/bni/approval/index)
+           - Pastikan AccountNumber MID berstatus ACTIVE dan dapat diubah
+        6. Ganti variabel **accNumBillerBilling** dengan merchant yang dipilih
 
 ## **Cara running Script**        
 Untuk menjalankan script automation, bisa menggunakan perintah :
