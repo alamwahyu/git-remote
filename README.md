@@ -27,6 +27,15 @@
 ## **Data yang perlu dirubah Sebelum running script**
 
 1. Data di file .env
+   * **forgotPassword** >> Akun User yang ingin dilakukan proses forgot password dan password baru nya dapat di tentukan pada data ini, bisa dipakai menggunakan cara :
+        1. Login sebagai Admin
+        2. Masuk ke halaman [Access Control -> Users](https://apdev.bni-ecollection.com/access-control/user/index)
+        3. Filter data Username berdasarkan value **"forgotpassword"**
+           - Pastikan Username tersebut sudah terdaftar di portal
+           - **Notes** : Jika belum terdaftar, silahkan buat users dahulu dengan Username : **"forgotpassword"**
+        4. Ganti variabel **forgotPassword** dengan password yang baru **ketentuan** 
+           - Pastikan data env forgotPassword diubah, setiap menjalankan Skenario **[02-01]ForgotPassword**
+
     * **MIDTesting** >> Memastikan data Merchant ID yang dipilih memiliki List Customer Data dan List Users yang terdaftar, bisa dipilih menggunakan cara :
         1. Login sebagai Admin
         2. Masuk ke halaman [Merchant Management](https://apdev.bni-ecollection.com/merchant/index)
@@ -35,7 +44,7 @@
            - Pastikan merchant yang dipilih adalah merchant yang tidak terpakai lagi atau bisa juga pilih merchant yang mengandung kata automation)
            - Pastikan MID yang dipilih terdapat List Customer Data (VA Number)
            - Pastikan MID terdapat List Akun Users yang terdaftar
-        7. Ganti variabel **MIDTesting** dengan merchant yang dipilih
+        4. Ganti variabel **MIDTesting** dengan merchant yang dipilih
 
     * **MIDNonRetail** >> Merchant Non Retail yang ingin data merchant nya di update, bisa dipilih menggunakan cara :
         1. Login sebagai Admin
