@@ -94,19 +94,30 @@
         1. Login sebagai Admin
         2. Masuk ke halaman [Merchant Management](https://apdev.bni-ecollection.com/merchant/index)
         3. Filter by BNI Giro Status berdasarkan status ACTIVE
-        5. Pilih Merchant ID yang ingin diubah account numbernya dengan **ketentuan**   
+        4. Pilih Merchant ID yang ingin diubah account numbernya dengan **ketentuan**   
            - Pastikan Merchant ID tidak sedang menunggu APPROVAL, dapat dicek melalui halaman [Approval Management](https://apdev.bni-ecollection.com/bni/approval/index)
            - Pastikan AccountNumber MID berstatus ACTIVE dan dapat diubah
-        6. Ganti variabel **merchantIDForReject** dengan merchant yang dipilih
+        5. Ganti variabel **merchantIDForReject** dengan merchant yang dipilih
         
-     * **accNumBillerBilling** >> Account Number Biller Billing yang dibutuhkan untuk proses inactive account, bisa dipilih menggunakan cara : 
+     * **accNumBillerBilling** >> Account Number Biller Billing yang dibutuhkan untuk proses view & inactive account, bisa dipilih menggunakan cara : 
         1. Login sebagai Admin
-        2. Masuk ke halaman [Merchant Management](https://apdev.bni-ecollection.com/merchant/index)
-        3. Filter by BNI Giro Status berdasarkan status ACTIVE
-        5. Pilih Merchant ID yang ingin diubah account numbernya dengan **ketentuan**   
-           - Pastikan Merchant ID tidak sedang menunggu APPROVAL, dapat dicek melalui halaman [Approval Management](https://apdev.bni-ecollection.com/bni/approval/index)
-           - Pastikan AccountNumber MID berstatus ACTIVE dan dapat diubah
-        6. Ganti variabel **accNumBillerBilling** dengan merchant yang dipilih
+        2. Masuk ke halaman [Biller Management -> Biller Billing](https://apdev.bni-ecollection.com/biller-billing/index)
+        3. Filter by Account Number berdasarkan biller yang sesuai
+        5. Pilih Account Number yang ingin dipakai dengan **ketentuan**   
+           - Pastikan terdapat VA pada account numbernya ketika view biller
+           - Pastikan account number masih berstatus **ACTIVE**
+           - Pastikan terdapat Billing ID yang bisa dilakukan **FORCE DEBIT**
+        6. Ganti variabel **accNumBillerBilling** dengan account number yang dipilih
+
+     * **billingIDForceDebit** >> billing ID yang dibutuhkan untuk proses force debit, bisa dipilih menggunakan cara : 
+        1. Login sebagai Admin
+        2. Masuk ke halaman [Biller Management -> Biller Billing](https://apdev.bni-ecollection.com/biller-billing/index)
+        3. Filter by Account Number berdasarkan data yang telah dipilih yaitu variabel **accNumBillerBilling**
+        4. Masuk ke halaman [View Biller](https://apdev.bni-ecollection.com/biller-billing/view?id=1741)
+        5. Pilih Billing ID yang ingin dipakai dengan **ketentuan**  
+           - Pastikan terdapat Billing ID yang dapat dilakukan **FORCE DEBIT**
+           - Pastikan Current Balance nya ada
+        6. Ganti variabel **billingIDForceDebit** dengan billing ID yang dipilih
 
 ## **Cara running Script**        
 Untuk menjalankan script automation, bisa menggunakan perintah :
