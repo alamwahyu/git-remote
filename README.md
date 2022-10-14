@@ -35,6 +35,9 @@
            - **Notes** : Jika belum terdaftar, silahkan buat users dahulu dengan Username : **"forgotpassword"**
         4. Ganti variabel **forgotPassword** dengan password yang baru dengan **ketentuan** 
            - Pastikan data env forgotPassword diubah, setiap menjalankan Skenario **[02-01]ForgotPassword**
+        
+        **Untuk Keperluan Main Flow :**
+        - [02-01]ForgotPassword
 
     * **MIDTesting** >> Memastikan data Merchant ID yang dipilih memiliki List Customer Data dan List Users yang terdaftar, bisa dipilih menggunakan cara :
         1. Login sebagai Admin
@@ -45,6 +48,16 @@
            - Pastikan MID yang dipilih terdapat List Customer Data (VA Number)
            - Pastikan MID terdapat List Akun Users yang terdaftar
         4. Ganti variabel **MIDTesting** dengan merchant yang dipilih
+
+        **Untuk Keperluan Main Flow :**
+        - MerchantManagement-cusomer_data_edit 
+        - MerchantManagement-cusomer_data_export
+        - MerchantManagement-cusomer_data_filter
+        - MerchantManagement-user_management_add
+        - MerchantManagement-user_management_edit
+        - MerchantManagement-user_management_delete
+        - MerchantManagement-user_management_filter
+
 
     * **MIDNonRetail** >> Merchant Non Retail yang ingin data merchant nya di update, bisa dipilih menggunakan cara :
         1. Login sebagai Admin
