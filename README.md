@@ -50,13 +50,13 @@
         4. Ganti variabel **MIDTesting** dengan merchant yang dipilih
 
         **Untuk Keperluan Main Flow :**
-        - MerchantManagement-cusomer_data_edit 
-        - MerchantManagement-cusomer_data_export
-        - MerchantManagement-cusomer_data_filter
-        - MerchantManagement-user_management_add
-        - MerchantManagement-user_management_edit
-        - MerchantManagement-user_management_delete
-        - MerchantManagement-user_management_filter
+        - [03-16]MerchantManagement-customer_data_edit_biller
+        - [03-15]MerchantManagement-customer_data_export
+        - [03-14]MerchantManagement-customer_data_filter
+        - [03-10]MerchantManagement-user_management_add
+        - [03-11]MerchantManagement-user_management_edit
+        - [03-13]MerchantManagement-user_management_delete
+        - [03-12]MerchantManagement-user_management_filter
 
 
     * **MIDNonRetail** >> Merchant Non Retail yang ingin data merchant nya di update, bisa dipilih menggunakan cara :
@@ -66,6 +66,21 @@
            - Pastikan merchant yang dipilih adalah merchant yang tidak terpakai lagi atau bisa juga pilih merchant yang mengandung kata automation)
            - Pastikan Merchant ID bertipe **NON RETAIL**
         4. Ganti variabel **MIDNonRetail** dengan merchant yang dipilih
+       
+        **Untuk Keperluan Main Flow :**
+        - [03-06]MerchantManagement-edit_non_retail
+
+    * **MIDRetail** >> Merchant Non Retail yang ingin data merchant nya di update, bisa dipilih menggunakan cara :
+        1. Login sebagai Admin
+        2. Masuk ke halaman [Merchant Management](https://apdev.bni-ecollection.com/merchant/index)
+        3. Pilih merchant ID yang ingin diedit dengan **ketentuan**   
+           - Pastikan merchant yang dipilih adalah merchant yang tidak terpakai lagi atau bisa juga pilih merchant yang mengandung kata automation)
+           - Pastikan Merchant ID bertipe **RETAIL**
+        4. Ganti variabel **MIDRetail** dengan merchant yang dipilih
+       
+        **Untuk Keperluan Main Flow :**
+        - [03-05]MerchantManagement-edit_retail
+ 
     * **MIDBilling** >> Merchant Billing yang ingin data merchant nya di update, bisa dipilih menggunakan cara :
         1. Login sebagai Admin
         2. Masuk ke halaman [Merchant Management](https://apdev.bni-ecollection.com/merchant/index)
@@ -73,6 +88,9 @@
            - Pastikan merchant yang dipilih adalah merchant yang tidak terpakai lagi atau bisa juga pilih merchant yang mengandung kata automation)
            - Pastikan Merchant ID bertipe **BILLING**
         4. Ganti variabel **MIDBilling** dengan merchant yang dipilih
+
+        **Untuk Keperluan Main Flow :**
+        - [03-07]MerchantManagement-edit_billing
         
     * **VAcustomerDataEdit** >> Customer Data yang ingin data VA nya diupdate, bisa dipilih menggunakan cara : 
         1. Login sebagai Admin
@@ -83,6 +101,9 @@
            - Pastikan VA yang dipilih sesuai dan terdaftar pada CustomerData
         6. Ganti variabel **VAcustomerDataEdit** dengan VA yang dipilih
 
+        **Untuk Keperluan Main Flow :**
+        - [03-16]MerchantManagement-customer_data_edit_biller
+
     * **userDataEdit** >> Users yang ingin data akses nya diupdate, bisa dipilih menggunakan cara : 
         1. Login sebagai Admin
         2. Masuk ke halaman [Merchant Management](https://apdev.bni-ecollection.com/merchant/index)
@@ -92,6 +113,9 @@
            - Pastikan Users yang dipilih sesuai dan terdaftar
            - Pastikan data user yang dipilih dapat diedit
         6. Ganti variabel **userDataEdit** dengan users yang dipilih
+
+        **Untuk Keperluan Main Flow :**
+        - [03-11]MerchantManagement-user_management_edit
  
      * **userDataDelete** >> Users yang ingin data akses nya didelete, bisa dipilih menggunakan cara : 
         1. Login sebagai Admin
@@ -103,6 +127,9 @@
            - Pastikan data user yang dipilih dapat didelete
         6. Ganti variabel **userDataDelete** dengan users yang dipilih
 
+        **Untuk Keperluan Main Flow :**
+        - [03-13]MerchantManagement-user_management_delete
+
      * **merchantIDForApprove** >> Merchant ID yang ingin data BNI Giro Account nya diubah dan diapprove, bisa dipilih menggunakan cara : 
         1. Login sebagai Admin
         2. Masuk ke halaman [Merchant Management](https://apdev.bni-ecollection.com/merchant/index)
@@ -111,6 +138,9 @@
            - Pastikan Merchant ID tidak sedang menunggu APPROVAL, dapat dicek melalui halaman [Approval Management](https://apdev.bni-ecollection.com/bni/approval/index)
            - Pastikan AccountNumber MID berstatus ACTIVE dan dapat diubah
         6. Ganti variabel **merchantIDForApprove** dengan merchant yang dipilih
+
+        **Untuk Keperluan Main Flow :**
+        - [06-02]ApprovalManagement-approve
         
      * **merchantIDForReject** >> Merchant ID yang ingin data BNI Giro Account nya diubah dan direject, bisa dipilih menggunakan cara : 
         1. Login sebagai Admin
@@ -120,6 +150,9 @@
            - Pastikan Merchant ID tidak sedang menunggu APPROVAL, dapat dicek melalui halaman [Approval Management](https://apdev.bni-ecollection.com/bni/approval/index)
            - Pastikan AccountNumber MID berstatus ACTIVE dan dapat diubah
         5. Ganti variabel **merchantIDForReject** dengan merchant yang dipilih
+
+        **Untuk Keperluan Main Flow :**
+        - [06-03]ApprovalManagement-reject
         
      * **accNumBillerBilling** >> Account Number Biller Billing yang dibutuhkan untuk proses view & inactive account, bisa dipilih menggunakan cara : 
         1. Login sebagai Admin
@@ -131,6 +164,11 @@
            - Pastikan terdapat Billing ID yang bisa dilakukan **FORCE DEBIT**
         6. Ganti variabel **accNumBillerBilling** dengan account number yang dipilih
 
+        **Untuk Keperluan Main Flow :**
+        - [05-03]BillerManagement-biller_billing_view
+        - [05-04]BillerManagement-biller_billing_view_filter
+        - [05-06]BillerManagement-biller_billing_inactive_account
+
      * **billingIDForceDebit** >> billing ID yang dibutuhkan untuk proses force debit, bisa dipilih menggunakan cara : 
         1. Login sebagai Admin
         2. Masuk ke halaman [Biller Management -> Biller Billing](https://apdev.bni-ecollection.com/biller-billing/index)
@@ -141,6 +179,9 @@
            - Pastikan Current Balance nya ada
         6. Ganti variabel **billingIDForceDebit** dengan billing ID yang dipilih
 
+        **Untuk Keperluan Main Flow :**
+        - [05-05]BillerManagement-biller_billing_view_biller_force_debit
+
      * **accNumBillerAllInactive** >> Account Number yang dibutuhkan untuk proses inactive account, bisa dipilih menggunakan cara : 
         1. Login sebagai Admin
         2. Masuk ke halaman [Biller Management -> Biller All](https://apdev.bni-ecollection.com/biller/index)
@@ -149,6 +190,9 @@
            - Pastikan account number berstatus ACTIVE
            - Pastikan terdapat List VA pada account numbernya ketika view biller
         6. Ganti variabel **accNumBillerAllInactive** dengan billing ID yang dipilih
+
+        **Untuk Keperluan Main Flow :**
+        - [04-05]BillerManagement-biller_all_inactive
 
      * **accNumBillerAllforInactiveVA** >> Account Number yang dibutuhkan untuk proses inactive pada VA, bisa dipilih menggunakan cara : 
         1. Login sebagai Admin
@@ -160,6 +204,9 @@
            - Pastikan **LIST VA** pada baris 1 berstatus **ACTIVE**
         6. Ganti variabel **accNumBillerAllforInactiveVA** dengan account NUmber yang dipilih
 
+        **Untuk Keperluan Main Flow :**
+        - [04-04]BillerManagement-biller_all_view_biller_inactive
+
      * **customerIDFilter | phoneNumberFilter | accountNumberFilter | processTimeFilter | dateFilter** >> Memastikan filter header Merchant Log, bisa dipilih menggunakan cara : 
         1. Login sebagai Admin
         2. Masuk ke halaman [System Log -> Merchant Log](https://apdev.bni-ecollection.com/system-log/merchant-log)
@@ -170,12 +217,18 @@
            - Filter by Process Time --> ganti variabel **processTimeFilter** dengan data yang dipilih
            - Filter by Date --> ganti variabel **dateFilter** dengan data yang dipilih
 
+        **Untuk Keperluan Main Flow :**
+        - [16-02]SystemLog-merchant_log_filter_header
+
      * **VANumberFilter | dateFilter** >> Memastikan filter header BNI Server Log, bisa dipilih menggunakan cara : 
         1. Login sebagai Admin
         2. Masuk ke halaman [System Log -> BNI Server Log](https://apdev.bni-ecollection.com/system-log/bni-server-log)
         3. Pilih data yang sesuai dan lakukan Filter by : *berdasarkan data env diatas*
            - Filter by VA Number --> ganti variabel **VANumberFilter** dengan data yang dipilih
            - Filter by Date --> ganti variabel **dateFilter** dengan data yang dipilih
+
+        **Untuk Keperluan Main Flow :**
+        - [17-02]SystemLog-BNI_server_log_filter_header
 
 ## **Cara running Script**        
 Untuk menjalankan script automation, bisa menggunakan perintah :
