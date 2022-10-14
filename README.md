@@ -33,7 +33,7 @@
         3. Filter data Username berdasarkan value **"forgotpassword"**
            - Pastikan Username tersebut sudah terdaftar di portal
            - **Notes** : Jika belum terdaftar, silahkan buat users dahulu dengan Username : **"forgotpassword"**
-        4. Ganti variabel **forgotPassword** dengan password yang baru **ketentuan** 
+        4. Ganti variabel **forgotPassword** dengan password yang baru dengan **ketentuan** 
            - Pastikan data env forgotPassword diubah, setiap menjalankan Skenario **[02-01]ForgotPassword**
 
     * **MIDTesting** >> Memastikan data Merchant ID yang dipilih memiliki List Customer Data dan List Users yang terdaftar, bisa dipilih menggunakan cara :
