@@ -119,6 +119,25 @@
            - Pastikan Current Balance nya ada
         6. Ganti variabel **billingIDForceDebit** dengan billing ID yang dipilih
 
+     * **accNumBillerAllInactive** >> Account Number yang dibutuhkan untuk proses inactive account, bisa dipilih menggunakan cara : 
+        1. Login sebagai Admin
+        2. Masuk ke halaman [Biller Management -> Biller All](https://apdev.bni-ecollection.com/biller/index)
+        3. Filter by Account Number berdasarkan data yang sesuai
+        5. Pilih Account Number yang ingin dipakai dengan **ketentuan**  
+           - Pastikan account number berstatus ACTIVE
+           - Pastikan terdapat List VA pada account numbernya ketika view biller
+        6. Ganti variabel **accNumBillerAllInactive** dengan billing ID yang dipilih
+
+     * **accNumBillerAllforInactiveVA** >> Account Number yang dibutuhkan untuk proses inactive pada VA, bisa dipilih menggunakan cara : 
+        1. Login sebagai Admin
+        2. Masuk ke halaman [Biller Management -> Biller All](https://apdev.bni-ecollection.com/biller/index)
+        3. Filter by Account Number berdasarkan data yang sesuai
+        4. Masuk ke halaman [View Biller Detail -List VA](https://apdev.bni-ecollection.com/biller/view?id=15)
+        5. Pilih Account Number yang ingin dipakai dengan **ketentuan**  
+           - Pastikan account number berstatus **ACTIVE**
+           - Pastikan **LIST VA** pada baris 1 berstatus **ACTIVE**
+        6. Ganti variabel **accNumBillerAllforInactiveVA** dengan account NUmber yang dipilih
+
 ## **Cara running Script**        
 Untuk menjalankan script automation, bisa menggunakan perintah :
 - File tertentu : npx codeceptjs run <nama file> contoh *npx codeceptjs run
