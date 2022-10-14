@@ -147,6 +147,23 @@
            - Pastikan **LIST VA** pada baris 1 berstatus **ACTIVE**
         6. Ganti variabel **accNumBillerAllforInactiveVA** dengan account NUmber yang dipilih
 
+     * **customerIDFilter | phoneNumberFilter | accountNumberFilter | processTimeFilter | dateFilter** >> Memastikan filter header Merchant Log, bisa dipilih menggunakan cara : 
+        1. Login sebagai Admin
+        2. Masuk ke halaman [System Log -> Merchant Log](https://apdev.bni-ecollection.com/system-log/merchant-log)
+        3. Pilih data yang sesuai dan lakukan Filter by : *berdasarkan data env diatas*
+           - Filter by Customer ID --> ganti variabel **customerIDFilter** dengan data yang dipilih
+           - Filter by Phone Number --> ganti variabel **phoneNumberFilter** dengan data yang dipilih
+           - Filter by Account Number --> ganti variabel **accountNumberFilter** dengan data yang dipilih
+           - Filter by Process Time --> ganti variabel **processTimeFilter** dengan data yang dipilih
+           - Filter by Date --> ganti variabel **dateFilter** dengan data yang dipilih
+
+     * **VANumberFilter | dateFilter** >> Memastikan filter header BNI Server Log, bisa dipilih menggunakan cara : 
+        1. Login sebagai Admin
+        2. Masuk ke halaman [System Log -> BNI Server Log](https://apdev.bni-ecollection.com/system-log/bni-server-log)
+        3. Pilih data yang sesuai dan lakukan Filter by : *berdasarkan data env diatas*
+           - Filter by VA Number --> ganti variabel **VANumberFilter** dengan data yang dipilih
+           - Filter by Date --> ganti variabel **dateFilter** dengan data yang dipilih
+
 ## **Cara running Script**        
 Untuk menjalankan script automation, bisa menggunakan perintah :
 - File tertentu : npx codeceptjs run <nama file> contoh *npx codeceptjs run
